@@ -13,9 +13,9 @@ btn.addEventListener("click",function()
 
 final_price= Math.round(((distance * price) + Number.EPSILON) * 100) /100;
 
-if(parseInt(eta) < 18){
+if(eta.value == "Minorenne"){
     final_price=Math.round(((final_price - (final_price * 20 / 100)) + Number.EPSILON) * 100) /100;
 }
-if(parseInt(eta) >= 65){
+if(eta.value == "senior"){
     final_price=Math.round(((final_price - (final_price * 40 / 100)) + Number.EPSILON) * 100) /100;
 }
