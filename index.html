@@ -15,16 +15,16 @@
             
             <div class="container card w-75 mx-auto ">
                 <div class="row justify-content-center my-3 px-5">
-                    <div class="col-4 d-inline mx-auto text-center">
+                    <div class="col-12 col-md-4 d-inline mx-auto my-1 text-center">
                         <p>Nome e Cognome</p>
 
                         <input class="border rounded w-75" id="input1" type="text">
                     </div>
-                    <div class="col-4 d-inline mx-auto text-center">
+                    <div class="col-12 col-md-4 d-inline mx-auto my-1 text-center">
                         <p>Km da percorrere</p>
                         <input class="border rounded w-75" id="input2" type="text">
                     </div>
-                    <div class="col-4 mx-auto text-center">
+                    <div class="col-12 col-md-4 mx-auto my-1 text-center">
                         <p>Fascia d'età</p>
                         <select class="border rounded" id="my_eta">
                             <option value="Standard"> Standard</option>
@@ -41,8 +41,54 @@
         </section>
         <section class="h-50">
             <h2 class="text-white text-center">I TUOI BIGLIETTI</h2>
-            <div class="container card w-75 mx-auto">
-                sfsdf
+            <div class="container card w-75 mx-auto h-50">
+                <div class="text-center" id="no-biglietto">
+                    <h4>ANCORA NESSUN BIGLIETTO  :(</h4>
+                </div>
+                <div class="h-75 border-primary justify-content-center d-none" id="biglietto">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col " >DETTAGLI PASSEGGERO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="bg-secondary">NOME PASSEGGERO</th>
+                                                    <th>Offerta</th>
+                                                    <th>Carrozza</th>
+                                                    <th>Codice CP</th>
+                                                    <th>Costo Biglietto</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" class="bg-secondary">
+                                                        <span class="align-top" id="NomePasseggero">
+                                                            Jon snow</th>
+                                                        </span>
+                                                    <td class="vertical-align-end" id="sconto">biglietto standard</td>
+                                                    <td class="vertical-align-end" id="random10">5</td>
+                                                    <td class="vertical-align-end" id="Random5">92911</td>
+                                                    <td class="vertical-align-end" id="costo">2.10€</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                        
+                
+                </div>
             </div>
 
         </section>
